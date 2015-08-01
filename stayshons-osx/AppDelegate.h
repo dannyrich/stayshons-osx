@@ -7,18 +7,14 @@
 //
 
 #import <Cocoa/Cocoa.h>
-#import "STKAudioPlayer.h"
+#import "Stayshons.h"
 
-@interface AppDelegate : NSObject <NSApplicationDelegate, STKAudioPlayerDelegate>
+@interface AppDelegate : NSObject <NSApplicationDelegate>
 {
     NSStatusItem *systemStatusItem;
-    STKAudioPlayer *audioPlayer;
-    
     NSMutableArray *menuItems;
-    NSArray *stations;
-    NSDictionary *station;
-    
     NSMenu *appMenu;
+    Stayshons *stayshons;
+    
 }
-
 @end

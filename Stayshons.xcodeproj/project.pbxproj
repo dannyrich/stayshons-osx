@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3043BA0D1B6C21AA004DF51A /* Stayshons.m in Sources */ = {isa = PBXBuildFile; fileRef = 3043BA0C1B6C21AA004DF51A /* Stayshons.m */; };
+		3043BA141B6C3465004DF51A /* DataFromUrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 3043BA131B6C3465004DF51A /* DataFromUrl.m */; };
 		308F51931B60227C00FCE613 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 308F51921B60227C00FCE613 /* AppDelegate.m */; };
 		308F51951B60227C00FCE613 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 308F51941B60227C00FCE613 /* main.m */; };
 		308F51971B60227C00FCE613 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 308F51961B60227C00FCE613 /* Images.xcassets */; };
@@ -28,6 +30,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3043BA0B1B6C21AA004DF51A /* Stayshons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Stayshons.h; sourceTree = "<group>"; };
+		3043BA0C1B6C21AA004DF51A /* Stayshons.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Stayshons.m; sourceTree = "<group>"; };
+		3043BA121B6C3465004DF51A /* DataFromUrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataFromUrl.h; sourceTree = "<group>"; };
+		3043BA131B6C3465004DF51A /* DataFromUrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataFromUrl.m; sourceTree = "<group>"; };
 		308F518C1B60227C00FCE613 /* stayshons-osx.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "stayshons-osx.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		308F51901B60227C00FCE613 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		308F51911B60227C00FCE613 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -65,6 +71,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3043BA0E1B6C328D004DF51A /* API */ = {
+			isa = PBXGroup;
+			children = (
+				3043BA121B6C3465004DF51A /* DataFromUrl.h */,
+				3043BA131B6C3465004DF51A /* DataFromUrl.m */,
+			);
+			name = API;
+			sourceTree = "<group>";
+		};
 		308F51831B60227C00FCE613 = {
 			isa = PBXGroup;
 			children = (
@@ -89,12 +104,15 @@
 		308F518E1B60227C00FCE613 /* stayshons-osx */ = {
 			isa = PBXGroup;
 			children = (
+				3043BA0E1B6C328D004DF51A /* API */,
 				308F51B41B6027CE00FCE613 /* assets */,
 				308F51911B60227C00FCE613 /* AppDelegate.h */,
 				308F51921B60227C00FCE613 /* AppDelegate.m */,
 				308F51961B60227C00FCE613 /* Images.xcassets */,
 				308F51981B60227D00FCE613 /* MainMenu.xib */,
 				308F518F1B60227C00FCE613 /* Supporting Files */,
+				3043BA0B1B6C21AA004DF51A /* Stayshons.h */,
+				3043BA0C1B6C21AA004DF51A /* Stayshons.m */,
 			);
 			path = "stayshons-osx";
 			sourceTree = "<group>";
@@ -194,7 +212,6 @@
 				TargetAttributes = {
 					308F518B1B60227C00FCE613 = {
 						CreatedOnToolsVersion = 6.4;
-						DevelopmentTeam = S83TC6R86A;
 					};
 					308F519E1B60227D00FCE613 = {
 						CreatedOnToolsVersion = 6.4;
@@ -279,6 +296,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3043BA0D1B6C21AA004DF51A /* Stayshons.m in Sources */,
+				3043BA141B6C3465004DF51A /* DataFromUrl.m in Sources */,
 				308F51951B60227C00FCE613 /* main.m in Sources */,
 				308F51931B60227C00FCE613 /* AppDelegate.m in Sources */,
 			);
@@ -350,7 +369,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
@@ -387,7 +406,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
 			};
